@@ -1,0 +1,53 @@
+# Hi, I'm Zixin Jia 👋
+
+**Physics at Peking University · hardware, systems and sensor fusion · founder of [Swift IARS](https://github.com/zixinzenith/1)**
+
+I like problems where the physics and the code have to agree — inertial navigation, GPU kernels, computer architecture, and the messy real-time systems that sit in between. I'm currently applying for CS/ECE master's programs.
+
+---
+
+## Featured project — Swift IARS
+
+**[Swift IARS — Integrated Augmented Reality System](https://github.com/zixinzenith/1)**
+
+A helmet-clip AR head-up display that replaces the four-to-five separate instruments skydivers, firefighters and tactical operators strap to themselves with one fused, stabilised display. Built as a startup in 2024; the algorithm core is open-sourced now.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/zixinzenith/1/main/docs/assets/hero_freefall_hud.jpg" width="85%" alt="Swift IARS HUD during freefall" />
+</p>
+
+Four algorithms make the display readable at 50 m/s:
+
+| | Block | What it does |
+|---|---|---|
+| I | [Redundancy design & fault-tolerant fusion](https://github.com/zixinzenith/1/blob/main/iars/redundancy/fusion.py) | four altitude sources, consensus voting, fault isolation, bias tracking |
+| II | [Head-motion stabilisation](https://github.com/zixinzenith/1/blob/main/iars/stabilization/head_motion.py) | separates voluntary head turns from airflow buffeting (−26 dB) |
+| III | [Binocular display alignment](https://github.com/zixinzenith/1/blob/main/iars/stereo/alignment.py) | recovers and corrects per-eye waveguide misalignment |
+| IV | [Multi-sensor SLAM / INS fusion](https://github.com/zixinzenith/1/blob/main/iars/slam/eskf.py) | 15-state error-state Kalman filter over IMU + baro + GNSS + stereo vision |
+
+`Python` · `error-state Kalman filter` · `sensor fusion` · `real-time embedded` · `MIT licensed`
+
+---
+
+## GPU kernels, compilers and systems
+
+| Repository | Focus |
+|---|---|
+| [triton-lab](https://github.com/zixinzenith/triton-lab) | Triton kernels — blocked matmul (~80% of tensor roofline), fused epilogues, softmax, layernorm, GQA attention — with benchmarks and profiling notes |
+| [cuda-lab](https://github.com/zixinzenith/cuda-lab) | stand-alone CUDA exercises: tiled matmul, coalesced transpose, shared-memory reductions, streams, cuBLAS |
+| [llvm-lab](https://github.com/zixinzenith/llvm-lab) | notes and experiments while learning LLVM IR and `clang -emit-llvm` |
+| [Co-Evolving-Correctness-and-Performance-Oracles](https://github.com/zixinzenith/Co-Evolving-Correctness-and-Performance-Oracles) | *QuantKernelBench* — a benchmark of ~40 quantized GPU operators with bit-exact / error-bound verification, plus an agentic harness for kernel tuning |
+| [AI-infra-training-camp](https://github.com/zixinzenith/AI-infra-training-camp) | AI-infrastructure coursework and decode-path experiments |
+
+---
+
+## Toolbox
+
+`Python` `C/C++` `CUDA` `Triton` `LLVM` `NumPy` `Git` · embedded firmware, IMU/GNSS sensor stacks, Kalman filtering, computer architecture
+
+---
+
+## Links
+
+- 📌 Featured work: [Swift IARS algorithm core](https://github.com/zixinzenith/1)
+- ✉️ zixinzenith@gmail.com
