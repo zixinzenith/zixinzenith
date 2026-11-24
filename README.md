@@ -10,7 +10,7 @@ I like problems where the physics and the code have to agree — inertial naviga
 
 **[Swift IARS — Integrated Augmented Reality System](https://github.com/zixinzenith/swift-iars)**
 
-A helmet-clip AR head-up display that replaces the four-to-five separate instruments skydivers, firefighters and tactical operators strap to themselves with one fused, stabilised display. The hardware proof-of-concept and flight campaign are from 2024; the algorithm core is open-sourced now — an implementation of the 2024 design written in 2026 with AI coding assistance, and the repo says so.
+A helmet-clip AR head-up display that replaces the four-to-five separate instruments skydivers, wingsuit pilots and firefighters strap to themselves with one fused, stabilised display. The hardware proof-of-concept and flight campaign are from 2024; the algorithm core is open-sourced now — an implementation of the 2024 design written in 2026 with AI coding assistance, and the repo says so.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/zixinzenith/swift-iars/main/docs/assets/hero_freefall_hud.jpg" width="85%" alt="Swift IARS HUD during freefall" />
