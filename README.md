@@ -36,7 +36,7 @@ Four algorithms are designed to keep the display readable at 50 m/s:
 | [triton-lab](https://github.com/zixinzenith/triton-lab) | Triton kernels — blocked matmul (~80% of tensor roofline), fused epilogues, softmax, layernorm, GQA attention — with benchmarks and profiling notes |
 | [cuda-lab](https://github.com/zixinzenith/cuda-lab) | stand-alone CUDA exercises: tiled matmul, coalesced transpose, shared-memory reductions, streams, cuBLAS |
 | [llvm-lab](https://github.com/zixinzenith/llvm-lab) | notes and experiments while learning LLVM IR and `clang -emit-llvm` |
-| [Co-Evolving-Correctness-and-Performance-Oracles](https://github.com/zixinzenith/Co-Evolving-Correctness-and-Performance-Oracles) | *QuantKernelBench* — a benchmark of ~40 quantized GPU operators with bit-exact / error-bound verification, plus an agentic harness for kernel tuning |
+| [QuantKernelBench](https://github.com/zixinzenith/QuantKernelBench) | a benchmark of 40 quantized GPU operators (INT4 packing, dequant-GEMV, GEMM, KV-cache, fused ops) with bit-exact / error-bound oracles and an agent loop for studying LLM kernel generation |
 | [AI-infra-training-camp](https://github.com/zixinzenith/AI-infra-training-camp) | AI-infrastructure coursework and decode-path experiments |
 
 ---
